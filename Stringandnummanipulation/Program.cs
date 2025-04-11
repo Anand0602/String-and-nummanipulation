@@ -8,18 +8,24 @@ namespace Stringandnummanipulation
             Console.WriteLine("What you want to Manipulate?");
             Console.WriteLine("1. String Manipulation");
             Console.WriteLine("2. Number Manipulation");
+            Console.WriteLine();
+
             int choice = Convert.ToInt32(Console.ReadLine());
             // String manipulation
             if (choice==1)
             {
                 Console.WriteLine("Enter a string:");
+                Console.WriteLine();
                 string str = Console.ReadLine();
+                Console.WriteLine();
                 Console.WriteLine("1. Reverse");
                 Console.WriteLine("2. Uppercase");
                 Console.WriteLine("3. Lowercase");
                 Console.WriteLine("4. Count vowels");
                 Console.WriteLine("5. Count consonants");
+                Console.WriteLine();
                 int strChoice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
                 if (strChoice == 1) {
                     //Reverse the string
                     char[] charArray = str.ToCharArray();
